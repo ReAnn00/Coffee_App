@@ -39,7 +39,7 @@ function updatePointsAndCart() {
       cart.style.display = "flex";
     }
   } else {
-    console.log("Not enough points to use the coupon.");
+    showAlert("Not enough points to use the coupon.", 'error');
   }
 }
 
@@ -53,7 +53,7 @@ useCouponButton.addEventListener("click", function () {
   );
 
   if (!selectedCoffeeElement) {
-    alert("Wybierz moc kawy przed użyciem kuponu.");
+    showAlert("Wybierz moc kawy przed użyciem kuponu.", 'warning');
     return;
   }
 
@@ -61,7 +61,7 @@ useCouponButton.addEventListener("click", function () {
     // Check if there are enough points to use a coupon
     updatePointsAndCart();
   } else {
-    alert("Nie masz wystarczająco punktów do użycia kuponu.");
+    showAlert("Nie masz wystarczająco punktów do użycia kuponu.", 'error');
   }
 });
 
@@ -85,3 +85,14 @@ coffeeButtons.forEach(function (button) {
     });
   });
 });
+
+// Define showAlert function after the other code
+function showAlert(message, type = 'info') {
+  Swal.fire({
+    icon: type,
+    title: '',
+    text: message,
+    confirmButtonText: 'OK',
+    confirmButtonColor: '#D74D00',
+  });
+}
