@@ -91,8 +91,10 @@ function showAlert(message, type = 'info') {
   Swal.fire({
     icon: type,
     title: '',
+    confirmButtonText: 'OK',
     text: message,
     confirmButtonText: 'OK',
     confirmButtonColor: '#D74D00',
   });
+
 }
