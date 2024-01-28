@@ -1,0 +1,335 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'aclonica';
+}
+
+.app-container {
+  background: linear-gradient(black, #ff7b00e5, black);
+  color: #fff;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #d4b6a1;
+  border-radius: 20px;
+  width: 300px;
+  height: 450px;
+  padding: 10px;
+  box-shadow: 0 6px 50px rgba(0, 0, 0, 0.671);
+  position: absolute;
+  border: 5px solid #574b42;
+}
+
+.card-header {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.card-header .scores {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.card-header .scores #points {
+  color: #D17842;
+}
+
+.card-header .arrow-left {
+  border: solid #D17842;
+  border-width: 0px 6px 6px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 30px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.card-image {
+  background-image: url('kawa.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  border-radius: 15px;
+  margin: 0 0;
+  box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.199);
+}
+
+.card-content {
+  font-family: 'aclonica', sans-serif;
+  text-align: center;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.card-content h2 {
+  font-family: 'aclonica', sans-serif;
+  color: #312722;
+  font-size: 16px;
+}
+
+.card-content p {
+  margin-top: 5px;
+  color: #312722;
+  font-size: 12px;
+}
+
+#menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1F1714;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px -10px 4px rgba(218, 218, 218, 0.2);
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#menu li {
+  margin: 0 10px;
+}
+
+#menu a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.material-icons {
+  margin-bottom: 5px;
+}
+
+#menu span {
+  font-size: 12px;
+  text-align: center;
+}
+
+.card-description p, h2 {
+  font-size: 14px;
+  font-family: 'inter', sans-serif;
+  color: #000000c9;
+  margin: 0 auto;
+}
+
+.card-description h1 {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'besley', serif;
+}
+
+.card-description h2 {
+  color: #D17842;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.card-description a{
+  text-decoration: none;
+  color: #D17842;
+}
+.card-description a:active {
+  color: rgb(36, 17, 9);
+}
+
+.card-content .coffee-size {
+  position: relative;
+  background-color: #312722;
+  border: 3px solid black;
+  border-radius: 40px;
+  width: 100px;
+  height: 30px;
+  color: whitesmoke;
+  font-size: 16px;
+  font-family: 'aclonica', sans-serif;
+}
+
+.card .points {
+  position: absolute;
+  top: 185px;
+  left: 17%;
+  transform: translateX(-50%);
+  background-color: #D74D00;
+  border-radius: 50%;
+  padding: 15px;
+  color: white;
+  font-size: 13px;
+  z-index: 10;
+}
+
+.card .points p {
+  margin: 0 3px;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
+  width: 120px;
+}
+
+.card-footer .button button {
+  background-color: #D74D00;
+  color: white;
+  font-size: 30px;
+  width: 115px;
+  height: 45px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top-width: 20px;
+  border-bottom-width: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-footer .button p {
+  font-size: 10px;
+  font-family: 'aclonica';
+  color: #000;
+  margin-top: -5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: -15px 50% 40px -10px;
+}
+
+.gg-coffee:hover {
+  background-color: #312722;
+}
+
+.gg-coffee:hover:before {
+  transform: translateX(-50%) scaleX(1.5);
+}
+
+.gg-coffee {
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 15px;
+  height: 14px;
+  border: 2px solid;
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-left: -4px;
+  margin-top: 3px;
+}
+
+.button-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media queries dla responsywności */
+
+/* Tablet i większe ekrany */
+@media (min-width: 768px) {
+  .app-container {
+      flex-direction: row;
+  }
+
+  .card {
+      margin: 0 10px; /* Dodatkowe odstępy między kartami */
+      width: 250px; /* Dostosowanie szerokości karty */
+  }
+
+  .card-image {
+      height: 150px; /* Dostosowanie wysokości obrazu karty */
+  }
+
+  .card-content h2 {
+      font-size: 14px; /* Dostosowanie rozmiaru czcionki */
+  }
+
+  /* Dodatkowe dostosowania dla tabletów */
+}
+
+/* Smartphone i mniejsze ekrany */
+@media (max-width: 767px) {
+  .app-container {
+      justify-content: center;
+  }
+
+  .card {
+      width: 250px; /* Dostosowanie szerokości karty */
+  }
+
+  .card-image {
+      height: 150px; /* Dostosowanie wysokości obrazu karty */
+  }
+
+  .card-content h2 {
+      font-size: 14px; /* Dostosowanie rozmiaru czcionki */
+  }
+
+/* Smartphone i mniejsze ekrany */
+@media (max-width: 767px) {
+    .app-container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 250px; /* Dostosowanie szerokości karty */
+    }
+
+    .card-image {
+        height: 150px; /* Dostosowanie wysokości obrazu karty */
+    }
+
+    .card-content h2 {
+        font-size: 14px; /* Dostosowanie rozmiaru czcionki */
+    }
+
+    .card-footer .button button {
+        font-size: 20px; /* Dostosowanie rozmiaru przycisku */
+        width: 100px; /* Dostosowanie szerokości przycisku */
+    }
+
+    .button-container {
+        margin: -15px -5px 0px -5px; /* Poprawa odstępów między przyciskami */
+    }
+
+    /* Dodatkowe dostosowania dla smartfonów */
+
+    .card-footer {
+        bottom: 70px; /* Dostosowanie odległości od dołu */
+    }
+
+    .button-container button {
+        margin: 0 5px; /* Poprawa odstępów między przyciskami */
+    }
+}
+}
