@@ -1,59 +1,94 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aclonica&family=Besley&family=Inter&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://unpkg.com/css.gg@2.0.0/icons/css/coffee.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Besley&family=Inter&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/coffee.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script scr="script.js"></script> -->
     <title>Cappuccino Card</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="card-header">
-        <p><i class="arrow-left"></i></p>
-        <div class="scores">
-            <span>Twoje Punkty</span>
-            <span id="points">12567</span>
-        </div>
+      <p><i class="arrow-left"></i></p>
+      <div class="scores">
+        <span>Twoje Punkty</span>
+        <p id="points" data-value="12567">12567</p>
+      </div>
     </div>
     <div class="app-container">
-        <div class="card">
-            <div class="card-image"></div>
-            <div class="points">
-                <p>150</p>
-                <p>pkt</p>
-            </div>
-            <div class="card-content">
-                <h2>Cappuccino</h2>
-                <p>z czekolada</p>
-                <button class="coffee-size">M</button>
-            </div>
-            <div class="card-description">
-                <h1>Opis</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <h2><a href="#">Czytaj więcej...</a></h2>
-                <h1>Moc kawy</h1>
-            </div>
-            <div class="card-footer">
-                <div class="button"><button>+<p>UŻYJ KUPONU</p></button></div>
-            </div>
-            <div class="button-container">
-                <button><i class="gg-coffee" data-power="1"></i>1</button>
-                <button><i class="gg-coffee" data-power="2"></i>2</button>
-                <button><i class="gg-coffee" data-power="3"></i>3</button>
-                <button><i class="gg-coffee" data-power="4"></i>4</button>
-                <button><i class="gg-coffee" data-power="5"></i>5</button>
-            </div>
+      <div class="card">
+        <div class="card-image"></div>
+        <div class="points">
+          <p data-value="150" id="card-points">150</p>
+          <p>pkt</p>
         </div>
+        <div class="card-content">
+          <h2>Cappuccino</h2>
+          <p>z czekolada</p>
+          <button class="coffee-size">M</button>
+        </div>
+        <div class="card-description">
+          <h1>Opis</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h2><a href="#">Czytaj więcej...</a></h2>
+          <h1>Moc kawy</h1>
+        </div>
+        <div class="card-footer">
+          <div class="button">
+            <button>
+              +
+              <p>UŻYJ KUPONU</p>
+            </button>
+          </div>
+        </div>
+        <div class="button-container">
+          <button><i class="gg-coffee" data-power="1" selected="false"></i>1</button>
+          <button><i class="gg-coffee" data-power="2" selected="false"></i>2</button>
+          <button><i class="gg-coffee" data-power="3" selected="false"></i>3</button>
+          <button><i class="gg-coffee" data-power="4" selected="false"></i>4</button>
+          <button><i class="gg-coffee" data-power="5" selected="false"></i>5</button>
+        </div>
+      </div>
     </div>
     <div id="menu">
-        <ul>
-            <li><a href="#home"><i class="material-icons">home</i><span>Strona Główna</span></a></li>
-            <li><a href="#favorites"><i class="material-icons">favorite</i><span>Ulubione</span></a></li>
-            <li><a href="#cart"><i class="material-icons">shopping_cart</i><span>Koszyk</span></a></li>
-            <li><a href="#contact"><i class="material-icons">account_circle</i><span>Karta</span></a></li>
-        </ul>
+      <ul>
+        <li>
+          <a href="#home"
+            ><i class="material-icons">home</i><span>Strona Główna</span></a
+          >
+        </li>
+        <li>
+          <a href="#favorites"
+            ><i class="material-icons">favorite</i><span>Ulubione</span></a
+          >
+        </li>
+        <li>
+          <a href="#cart"
+            ><i class="material-icons">shopping_cart</i><span>Koszyk</span></a
+          >
+        </li>
+        <li>
+          <a href="#contact"
+            ><i class="material-icons">account_circle</i><span>Karta</span></a
+          >
+        </li>
+      </ul>
+      <div class="items">
+        <p id="shopping-cart" data-value="0">0</p>
+      </div>
     </div>
-</body>
+<script src="script.js"></script>
+  </body>
 </html>
