@@ -238,10 +238,6 @@ body, html {
   margin: -15px 50% 40px -10px;
 }
 
-/* .gg-coffee:hover:before {
-  transform: translateX(-50%) scaleX(1.5);
-} */
-
 .gg-coffee {
   cursor: pointer;
   box-sizing: border-box;
@@ -264,64 +260,62 @@ body, html {
   cursor: pointer;
 }
 
-/* Media queries dla responsywności */
+/* Media queries for responsiveness */
 
-/* Tablet i większe ekrany */
+/* Tablet and bigger screens */
 @media (min-width: 768px) {
   .app-container {
       flex-direction: row;
   }
 
   .card {
-      margin: 0 10px; /* Dodatkowe odstępy między kartami */
-      width: 250px; /* Dostosowanie szerokości karty */
+      margin: 0 10px; 
+      width: 250px; 
   }
 
   .card-image {
-      height: 150px; /* Dostosowanie wysokości obrazu karty */
+      height: 150px; 
   }
 
   .card-content h2 {
-      font-size: 14px; /* Dostosowanie rozmiaru czcionki */
+      font-size: 14px; 
   }
-
-  /* Dodatkowe dostosowania dla tabletów */
 }
 
-/* Smartphone i mniejsze ekrany */
+/* Smartphone and smaller screens */
 @media (max-width: 767px) {
   .app-container {
       justify-content: center;
   }
 
   .card {
-      width: 250px; /* Dostosowanie szerokości karty */
+      width: 250px; 
   }
 
   .card-image {
-      height: 150px; /* Dostosowanie wysokości obrazu karty */
+      height: 150px; 
   }
 
   .card-content h2 {
-      font-size: 14px; /* Dostosowanie rozmiaru czcionki */
+      font-size: 14px; 
   }
 
-/* Smartphone i mniejsze ekrany */
+/* Smartphone and smaller screens */
 @media (max-width: 767px) {
     .app-container {
         justify-content: center;
     }
 
     .card {
-        width: 250px; /* Dostosowanie szerokości karty */
+        width: 250px;
     }
 
     .card-image {
-        height: 150px; /* Dostosowanie wysokości obrazu karty */
+        height: 150px; 
     }
 
     .card-content h2 {
-        font-size: 14px; /* Dostosowanie rozmiaru czcionki */
+        font-size: 14px;
     }
   }
 }
